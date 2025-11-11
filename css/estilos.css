@@ -93,6 +93,30 @@ nav a:hover::after {
     margin: 20px auto;
 }
 
+
+/* ==== SECCIÓN SERVICIOS ==== */
+.servicios {
+    padding: 60px 20px;
+    background-color: #e8f0ff;
+    text-align: center;
+}
+
+.servicios h2 {
+    color: #2a75bb;
+}
+
+.servicios ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.servicios li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+
 /* ==== SECCIÓN CONTACTO ==== */
 .contacto {
     padding: 60px 20px;
