@@ -153,3 +153,13 @@ nav a:hover::after {
 .contacto button:hover {
     background-color: #2a56b3;
 }
+
+/* ==== FOOTER ==== */
+footer {
+    background-color: #2a75bb;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 0;
+    font-size: 0.9em;
+}
