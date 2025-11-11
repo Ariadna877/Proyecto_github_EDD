@@ -73,3 +73,22 @@ nav a:hover::after {
     transform: scaleX(1);
     transform-origin: left;
 }
+
+/* ==== SECCIÓN INICIO ==== */
+.inicio {
+    padding: 80px 20px;
+    text-align: center;
+    background: url('https://wallpapercave.com/wp/wp2615418.jpg') center/cover no-repeat;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+.inicio h2 {
+    font-size: 2em;
+}
+
+.inicio p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 20px auto;
+}
