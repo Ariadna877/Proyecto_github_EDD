@@ -115,6 +115,10 @@ nav a:hover::after {
     font-size: 18px;
     margin: 10px 0;
 }
+nav a.active {
+    color: #ffde59;
+    text-decoration: underline;
+}
 
 
 /* ==== SECCIÓN CONTACTO ==== */
