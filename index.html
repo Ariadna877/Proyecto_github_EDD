@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Pokemon</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <nav>
-        <a href="#Inicio">Inicio</a>
-        <a href="#Servicios">Servicios</a>
-        <a href="#Contacto">Contacto</a>
-    </nav>
+    <!-- ENCABEZADO -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="img/logopokeball.png" alt="Logo Pokémon">
+                <h1>Tienda Pokémon</h1>
+            </div>
+            <nav>
+                <a href="#Inicio">Inicio</a>
+                <a href="#Servicios">Servicios</a>
+                <a href="#Contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
 
     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; max-width: 900px; margin: auto;">
 
@@ -31,8 +41,7 @@
       <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" alt="Squirtle">
       <p>Tipo: Agua</p>
     </div>
-
-  </div>
+    </div>
 
 </body>
 </html>
