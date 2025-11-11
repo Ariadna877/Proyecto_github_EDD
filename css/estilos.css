@@ -94,31 +94,61 @@ nav a:hover::after {
 }
 
 
-/* ==== SECCIÓN SERVICIOS ==== */
 .servicios {
     padding: 60px 20px;
-    background-color: #e8f0ff;
+    background: linear-gradient(135deg, #e8f0ff, #ffffff);
     text-align: center;
 }
 
 .servicios h2 {
+    font-size: 2.2em;
     color: #2a75bb;
+    margin-bottom: 10px;
 }
 
-.servicios ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
+.servicios p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
 }
 
-.servicios li {
-    font-size: 18px;
-    margin: 10px 0;
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
 }
-nav a.active {
-    color: #ffde59;
-    text-decoration: underline;
+
+.card {
+    background: #fff;
+    border: 3px solid #ffcb05;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.card img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.95em;
+    color: #333;
+}
+
 
 
 /* ==== SECCIÓN CONTACTO ==== */
