@@ -5,6 +5,7 @@ body {
     background-color: #f8f8f8;
     color: #333;
     background: url('../img/pokemon-bg.png') center/cover no-repeat;
+    background-attachment: fixed;
 }
 
 
@@ -14,6 +15,10 @@ header {
     color: white;
     padding: 10px 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .nav-container {
@@ -91,11 +96,13 @@ nav a:hover::after {
     margin: 20px auto;
 }
 
-
+/* ==== SECCIÓN SERVICIOS ==== */
 .servicios {
-    padding: 60px 20px;
-    background: linear-gradient(135deg, #e8f0ff, #ffffff);
+    position: relative; /* mantiene la referencia para z-index de hijos si hace falta */
+    padding: 100px 20px 60px 20px; /* espacio para el header fijo */
     text-align: center;
+    color: rgb(245, 23, 23);
+    overflow: hidden;
 }
 
 .servicios h2 {
@@ -109,6 +116,7 @@ nav a:hover::after {
     margin-bottom: 40px;
 }
 
+/* Contenedor de tarjetas */
 .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -133,7 +141,9 @@ nav a:hover::after {
 }
 
 .card img {
-    width: 80px;
+    width: 120px;       /* tamaño más grande */
+    height: 120px;      /* mismo tamaño para todas */
+    object-fit: contain; /* mantiene proporción sin deformar */
     margin-bottom: 15px;
 }
 
@@ -145,6 +155,36 @@ nav a:hover::after {
 .card p {
     font-size: 0.95em;
     color: #333;
+}
+.combat-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: linear-gradient(145deg, #ffcb05, #ffde59);
+    color: #1D5998;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 25px;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    border: 2px solid #1D5998;
+
+    /* Animación continua */
+    animation: glow 2s infinite alternate;
+}
+
+/* Keyframes para brillo pulsante */
+@keyframes glow {
+    0% {
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3), 0 0 5px #ffde59;
+    }
+    50% {
+        box-shadow: 0 6px 12px rgba(0,0,0,0.4), 0 0 15px #ffde59;
+    }
+    100% {
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3), 0 0 5px #ffde59;
+    }
 }
 
 
