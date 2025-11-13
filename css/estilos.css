@@ -141,7 +141,9 @@ nav a:hover::after {
 }
 
 .card img {
-    width: 80px;
+    width: 120px;       /* tamaño más grande */
+    height: 120px;      /* mismo tamaño para todas */
+    object-fit: contain; /* mantiene proporción sin deformar */
     margin-bottom: 15px;
 }
 
