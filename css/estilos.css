@@ -14,10 +14,10 @@ body {
     min-height: 100vh;
 }
 
-/* El contenido principal debe crecer */
-main, section {
-    flex: 0 0 auto;
+main {
+    flex: 1;
 }
+
 
 
 /* ==== ENCABEZADO ==== */
