@@ -78,6 +78,16 @@ nav a:hover::after {
     transform: scaleX(1);
     transform-origin: left;
 }
+/* ESTILO PARA EL LINK ACTIVO */
+nav a.active {
+    color: #1D5998;
+}
+
+nav a.active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
 
 /* ==== SECCIÓN INICIO ==== */
 .inicio {
