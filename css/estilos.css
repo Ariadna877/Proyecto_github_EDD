@@ -154,10 +154,30 @@ nav a.active::after {
 /* Contenedor de tarjetas */
 .cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: 1fr;
     gap: 20px;
     max-width: 1100px;
     margin: auto;
+}
+/* Escritorio: 3 columnas */
+@media (min-width: 900px) {
+    .cards-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 cajas arriba y 3 abajo */
+    }
+}
+
+/* Tablet: 2 columnas */
+@media (min-width: 600px) and (max-width: 899px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Móvil: 1 columna */
+@media (max-width: 599px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 .card {
@@ -168,11 +188,13 @@ nav a.active::after {
     text-align: center;
     box-shadow: 0 6px 15px rgba(0,0,0,0.2);
     transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
 }
 
 .card:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    border-color: #ffde59; 
 }
 
 .card img {
@@ -191,6 +213,8 @@ nav a.active::after {
     font-size: 0.95em;
     color: #333;
 }
+
+/* Botón de combate */
 .combat-btn {
     display: inline-block;
     margin-top: 15px;
