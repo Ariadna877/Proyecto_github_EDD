@@ -16,7 +16,7 @@ body {
 
 /* El contenido principal debe crecer */
 main, section {
-    flex: 1;
+    flex: 0 0 auto;
 }
 
 
