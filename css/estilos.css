@@ -169,6 +169,11 @@ nav a.active::after {
     margin-bottom: 15px;
 }
 
+.tipo-img {
+    width: 60px !important;
+    height: 60px !important;
+}
+
 .pokemon-card h3 {
     color: #ff0000;
     margin-bottom: 10px;
