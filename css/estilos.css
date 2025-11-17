@@ -123,6 +123,75 @@ nav a.active::after {
     100% { transform: translateY(0) rotate(0deg); }
 }
 
+/* ==== SECCIÓN POKÉMON ==== */
+
+.pokemon-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.pokemon-title {
+    font-size: 2em;
+    color: #1D5998;
+    margin-bottom: 25px;
+}
+
+/* Grid de tarjetas */
+.pokemon-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Estilo de cada tarjeta Pokémon (igual a .card) */
+.pokemon-card {
+    background: #fff;
+    border: 3px solid #ffcb05;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.pokemon-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    border-color: #ffde59;
+}
+
+.pokemon-card img {
+    width: 150px;        /* imágenes más grandes */
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.pokemon-card h3 {
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+.pokemon-card p {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .pokemon-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .pokemon-container {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ==== SECCIÓN SERVICIOS ==== */
 .servicios {
     position: relative; /* mantiene la referencia para z-index de hijos si hace falta */
